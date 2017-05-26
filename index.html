@@ -10,44 +10,107 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
-   <hedaer class="header-main">
+   <header class="header-main">
+      <div class="container">
        <div class="logo-main">
-           <img src="../image/logo.svg" alt="">
+           <img src="../image/logo.png" alt="logo">
        </div>
        
        <nav class="nav-main">
           <ul>
               <li><a href="">студия</a></li>
               <li><a href="">клиенты</a></li>
-              <li><a href="">магазин</a></li>
+              <li class="active"><a href="">магазин</a></li>
               <li><a href="">контакты</a></li>
           </ul>
        </nav>
        
        <div class="basket">
-           <a href="">корзина</a>
+           <a href="#">корзина</a>
        </div>
        
-       <h1>добро пожаловать в магазин готовых макетов</h1> 
-       
-   </hedaer>
+       <h1>добро пожаловать в магазин<br> готовых макетов</h1> 
+      </div>      
+   </header>
    
-   <main>
+   <main class="container">
        <aside class="aside-form">
            <form action="#" method="post">
-             
+                    <!--ползунок-->
               <fieldset class="range">
+                  <legend>стоимость:</legend>
                   <div class="slider-box">
                       <div id="slider-range"></div>
                   </div>
                   <input type="text" id="amount">
+                  <label for="amount">от</label>
                   <input type="text" id="amount1">
+                  <label for="amount1">до</label>
               </fieldset>
               
+              <fieldset class="grid">
+                  <legend>сетка:</legend>
+                  
+                  <input type="radio" id="radio1" name="question-one">
+                  <label for="radio1">Адаптивная</label>
+                  
+                  <input type="radio" id="radio2" name="question-one">
+                  <label for="radio2">Фиксированная</label>
+                  
+                  <input type="radio" id="radio3" name="question-one">
+                  <label for="radio3">Резиновая</label>
+                  
+            </fieldset>
+             
+            <fieldset class="features">
+                <legend>особенности:</legend>
+                
+                <input type="checkbox" id="check1">
+                <label for="check1">Слайдер</label>
+                
+                <input type="checkbox" id="check2">
+                <label for="check2">Блок преимуществ</label>
+                
+                <input type="checkbox" id="check3">
+                <label for="check3">Новости</label>
+                
+                <input type="checkbox" id="check4">
+                <label for="check4">Галерея</label>
+                
+                <input type="checkbox" id="check5">
+                <label for="check5">Корзина</label>
+                
+            </fieldset>
               
+            <input type="submit" name="show" value="показать">  
               
            </form>
        </aside>
+       
+       <section class="catalog">
+           <div class="sorting">
+               <span>сортировать:</span>
+               <a href="#">по цене</a>
+               <a href="#">по типу</a>
+               <a href="#">по функционалу</a>
+               <div class="sorting-arrow">
+                   <a href="#"></a>
+                   <a href="#"></a>
+               </div>
+           </div>
+           
+           <div class="catalog-box">
+               <div class="catalog-item"></div>
+           </div>
+       </section>
+       
+       <div class="pagination">
+           <a class="pag-active" href="#">1</a>
+           <a href="#">2</a>
+           <a href="#">3</a>
+           <a href="#">следующая</a>
+       </div>
+       
    </main>
 
     
