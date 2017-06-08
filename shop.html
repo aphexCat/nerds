@@ -1,0 +1,220 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/range-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+   <header class="header-main">
+      <div class="container">
+       <div class="logo-main">
+           <img src="../image/logo.png" alt="logo">
+       </div>
+       
+       <nav class="nav-main">
+          <ul>
+              <li><a href="">студия</a></li>
+              <li><a href="">клиенты</a></li>
+              <li class="active"><a href="">магазин</a></li>
+              <li><a href="">контакты</a></li>
+          </ul>
+       </nav>
+       
+       <div class="basket">
+           <a href="#">корзина</a>
+       </div>
+       
+       <h1>добро пожаловать в магазин<br> готовых макетов</h1> 
+      </div>      
+   </header>
+   
+   <main class="container">
+       <aside class="aside-form">
+           <form action="#" method="post">
+                    <!--ползунок-->
+              <fieldset class="range">
+                  <legend>стоимость:</legend>
+                  <div class="slider-box">
+                      <div id="slider-range"></div>
+                  </div>
+                  <input type="text" id="amount">
+                  <label for="amount">от</label>
+                  <input type="text" id="amount1">
+                  <label for="amount1">до</label>
+              </fieldset>
+              
+              <fieldset class="grid">
+                  <legend>сетка:</legend>
+                  
+                  <input type="radio" id="radio1" name="question-one">
+                  <label for="radio1">Адаптивная</label>
+                  
+                  <input type="radio" id="radio2" name="question-one">
+                  <label for="radio2">Фиксированная</label>
+                  
+                  <input type="radio" id="radio3" name="question-one">
+                  <label for="radio3">Резиновая</label>
+                  
+            </fieldset>
+             
+            <fieldset class="features">
+                <legend>особенности:</legend>
+                
+                <input type="checkbox" id="check1">
+                <label for="check1">Слайдер</label>
+                
+                <input type="checkbox" id="check2">
+                <label for="check2">Блок преимуществ</label>
+                
+                <input type="checkbox" id="check3">
+                <label for="check3">Новости</label>
+                
+                <input type="checkbox" id="check4">
+                <label for="check4">Галерея</label>
+                
+                <input type="checkbox" id="check5">
+                <label for="check5">Корзина</label>
+            
+            </fieldset>
+              
+            <input type="submit" name="show" value="показать">  
+              
+           </form>
+       </aside>
+       
+       <section class="catalog">
+           <div class="sorting">
+               <span>сортировать:</span>
+               <a href="#">по цене</a>
+               <a href="#">по типу</a>
+               <a href="#">по функционалу</a>
+               <div class="sorting-arrow">
+                   <a class="arrow-down active-arrow" href="#"></a>
+                   <a class="arrow-up" href="#"></a>
+               </div>
+           </div>
+           
+           <div class="catalog-box">
+               <div class="catalog-item">
+                   <img src="../image/item1.png" alt="">
+                   <div class="catalog-item-price">
+                       <h3 class="item-name">aviator</h3>
+                       <p class="item-description">Интернет-магазин<br> с личным кабинетом</p>
+                       <a href="#" class="item-price">12500 р.</a>
+                   </div>
+               </div>
+               
+               <div class="catalog-item">
+                   <img src="../image/item2.png" alt="">
+                   <div class="catalog-item-price">
+                       <h3 class="item-name">sunset</h3>
+                       <p class="item-description">Интернет-магазин<br> с личным кабинетом</p>
+                       <a href="#" class="item-price">10000 р.</a>
+                   </div>
+               </div>
+               
+               <div class="catalog-item">
+                   <img src="../image/item3.png" alt="">
+                   <div class="catalog-item-price">
+                       <h3 class="item-name">forte</h3>
+                       <p class="item-description">Интернет-магазин<br> с личным кабинетом</p>
+                       <a href="#" class="item-price">10000 р.</a>
+                   </div>
+               </div>
+               
+               <div class="catalog-item">
+                   <img src="../image/item4.png" alt="">
+                   <div class="catalog-item-price">
+                       <h3 class="item-name">MODERN ORGANIC THAI</h3>
+                       <p class="item-description">Интернет-магазин<br> с личным кабинетом</p>
+                       <a href="#" class="item-price">16000 р.</a>
+                   </div>
+               </div>
+               
+               <div class="catalog-item">
+                   <img src="../image/item5.png" alt="">
+                   <div class="catalog-item-price">
+                       <h3 class="item-name">avenue</h3>
+                       <p class="item-description">Интернет-магазин<br> с личным кабинетом</p>
+                       <a href="#" class="item-price">7000 р.</a>
+                   </div>
+               </div>
+               
+               <div class="catalog-item">
+                   <img src="../image/item6.png" alt="">
+                   <div class="catalog-item-price">
+                       <h3 class="item-name">dovetail</h3>
+                       <p class="item-description">Интернет-магазин<br> с личным кабинетом</p>
+                       <a href="#" class="item-price">20000 р.</a>
+                   </div>
+               </div>
+               
+           </div>
+           
+       </section>
+       
+       <div class="pagination">
+           <a class="pag-active" href="#">1</a>
+           <a href="#">2</a>
+           <a href="#">3</a>
+           <a class="pag-next" href="#">следующая</a>
+       </div>
+       
+       
+       
+   </main>
+
+   <div class="map">
+       <img src="../image/map.png" alt="">
+       <div class="catalog-item-price">
+            <h3 class="item-name">forte</h3>
+            <p class="item-description">Интернет-магазин<br> с личным кабинетом</p>
+            <a href="#" class="item-price">10000 р.</a>
+       </div>
+    </div>
+        
+   <footer class="footer-main">
+      <div class="container">
+       <div class="social-box">
+           <a href="http://vk.com" class="social vk"></a>
+           <a href="http://facebook.com" class="social fb"></a>
+           <a href="http://instagram.com" class="social ig"></a>
+       </div>
+       
+       <div class="friends-discount">
+           <h2>Давайте дружить, это выгодно!</h2>
+           <p>Скидка 10% для друзей из социальных сетей.</p>
+       </div>
+       
+      </div>
+   </footer>        
+                
+                    
+                        
+                            
+                                
+                                    
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	    <script>
+              $( function() {
+                    $( "#slider-range" ).slider({
+                      range: true,
+                      min: 0,
+                      max: 15000,
+                      values: [ 0, 150000 ],
+                      slide: function( event, ui ) {
+                        $( "#amount" ).val( ui.values[ 0 ]);
+                        $( "#amount1" ).val( ui.values[ 1 ]);
+                      }
+                    });
+                    $( "#amount" ).val(  $( "#slider-range" ).slider( "values", 0 ));
+                    $( "#amount1" ).val(  $( "#slider-range" ).slider( "values", 1 ));
+                  } );
+        </script>                                           
+</body>
+</html>

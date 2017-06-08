@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>NERDS</title>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/range-style.css">
+    <link rel="stylesheet" href="/css/index-style.css">
+    <link rel="stylesheet" href="/css/flexslider.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/js/jquery.flexslider.js"></script>
 </head>
 <body>
    <header class="header-main">
       <div class="container">
-       <div class="logo-main">
+      
+       <h1 class="logo-main">
            <img src="../image/logo.png" alt="logo">
-       </div>
+       </h1>
        
        <nav class="nav-main">
           <ul>
@@ -29,93 +32,151 @@
            <a href="#">корзина</a>
        </div>
        
-       <h1>добро пожаловать в магазин<br> готовых макетов</h1> 
-      </div>      
-   </header>
-   
-   <main class="container">
-       <aside class="aside-form">
-           <form action="#" method="post">
-                    <!--ползунок-->
-              <fieldset class="range">
-                  <legend>стоимость:</legend>
-                  <div class="slider-box">
-                      <div id="slider-range"></div>
-                  </div>
-                  <input type="text" id="amount">
-                  <label for="amount">от</label>
-                  <input type="text" id="amount1">
-                  <label for="amount1">до</label>
-              </fieldset>
-              
-              <fieldset class="grid">
-                  <legend>сетка:</legend>
-                  
-                  <input type="radio" id="radio1" name="question-one">
-                  <label for="radio1">Адаптивная</label>
-                  
-                  <input type="radio" id="radio2" name="question-one">
-                  <label for="radio2">Фиксированная</label>
-                  
-                  <input type="radio" id="radio3" name="question-one">
-                  <label for="radio3">Резиновая</label>
-                  
-            </fieldset>
-             
-            <fieldset class="features">
-                <legend>особенности:</legend>
-                
-                <input type="checkbox" id="check1">
-                <label for="check1">Слайдер</label>
-                
-                <input type="checkbox" id="check2">
-                <label for="check2">Блок преимуществ</label>
-                
-                <input type="checkbox" id="check3">
-                <label for="check3">Новости</label>
-                
-                <input type="checkbox" id="check4">
-                <label for="check4">Галерея</label>
-                
-                <input type="checkbox" id="check5">
-                <label for="check5">Корзина</label>
-                
-            </fieldset>
-              
-            <input type="submit" name="show" value="показать">  
-              
-           </form>
-       </aside>
        
-       <section class="catalog">
-           <div class="sorting">
-               <span>сортировать:</span>
-               <a href="#">по цене</a>
-               <a href="#">по типу</a>
-               <a href="#">по функционалу</a>
-               <div class="sorting-arrow">
-                   <a href="#"></a>
-                   <a href="#"></a>
-               </div>
+       <div class="flexslider">
+          <ul class="slides">
+            <li>
+                <div class="slider-description">
+                    <h2>Долго, дорого, скрупулезно.</h2>
+                    <p>
+                        Математически вывереннй дизайн<br>
+                        для вашего сайта или мобильного приложения
+                    </p>
+                    
+                    <a class="slider-btn btn" href="https://www.sports.ru/">узнать больше</a>
+                </div>
+                <div class="img-box"><img src="/image/slider1.png" /></div>
+            </li>
+            <li>
+               <div class="slider-description">
+                    <h2>Любите ли вы математику, как любим ее мы?</h2>
+                    <p>
+                        Нашим дизайнерам мы удаляем нейроны, ответственные
+                        за креатив, чтобы дать им возможности все просчитать
+                    </p>
+            
+                    <a class="slider-btn btn" href="#">узнать больше</a>
+                </div>
+                <div class="img-box"><img src="/image/slider2.png" /></div>
+            </li>
+            <li>
+               <div class="slider-description">
+                    <h2>Только наркотики, только хардкор!</h2>
+                    <p>
+                        Все дизайнерские решение в нашей компании принимаются
+                        только под воздействием качественных галлюциногенов
+                    </p>
+                    <a class="slider-btn btn" href="#">узнать больше</a>
+                </div>
+                <div class="img-box"><img src="/image/slider3.png" /></div>
+            </li>
+          </ul>
+       </div>
+      </div><!--контейнер -->
+   </header>
+ 
+   <main class="container">
+      
+       <section class="features">
+           <div class="features-item">
+               <img src="/image/features1.png" alt="">
+               <h3>веб-сайты</h3>
+               <p>
+                  Мир никогда не будет прежним
+                  после того как увидит наш сайт!
+               </p>
+               <a class="features-btn btn" href="#">заказать</a>
            </div>
-           
-           <div class="catalog-box">
-               <div class="catalog-item"></div>
+           <div class="features-item">
+               <img src="/image/features2.png" alt="">
+               <h3>приложения</h3>
+               <p>
+                  Покорите топ-10 приложений в AppStore и Google Play 
+               </p>
+               <a class="features-btn btn" href="#">заказать</a>
+           </div>
+           <div class="features-item">
+               <img src="/image/features3.png" alt="">
+               <h3>презентации</h3>
+               <p>
+                   Вы даже не подозреваете, насколько вы изумительны!
+               </p>
+               <a class="features-btn btn" href="#">заказать</a>
            </div>
        </section>
        
-       <div class="pagination">
-           <a class="pag-active" href="#">1</a>
-           <a href="#">2</a>
-           <a href="#">3</a>
-           <a href="#">следующая</a>
+       <article class="about-us">
+           
+           <div class="about-us-description">
+               <h2>Мы &mdash; маленькая, но гордая<br> дизайн-студия из       Краснодара.</h2>
+               <p>
+                   Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
+               </p>
+           </div>
+           <div class="about-us-logo">
+               <img src="../image/about-logo.png" alt="">
+               <span>since 2004</span>
+           </div>
+           
+           <section class="about-us-development">
+               <h4>выполняем заказы на разработку:</h4>
+               <ul>
+                   <li>Веб-сайтов любой сложности</li>
+                   <li>Мобильных приложений для iOS и Android</li>
+                   <li>Слайдшоу и видео для корпоративных презентаций</li>
+               </ul>
+           </section>
+           <section class="about-us-working">
+               <h4>как мы работаем:</h4>
+               <ul>
+                   <li>С самоотдачей 146%</li>
+                   <li>Соблюдая сроки на 100%</li>
+                   <li>По предоплате 50%</li>
+               </ul>
+           </section>
+       </article>
+       
+       <section class="partners">
+            <a href="http://glukhanko.ru/" ><img src="../image/partners1.png" alt=""></a>
+            <a href="http://htmlacademy.ru/"><img src="../image/partners2.png" alt=""></a>
+            <a href="http://glukhanko.ru/"><img src="../image/partners3.png" alt=""></a>
+       </section>
+        
+   </main>
+       
+       
+       
+       
+      
+       
+       
+
+   <section class="map">
+       <div class="write-to-us">
+           <h4>NЁRDS DESIGN STUDIO</h4>
+           <span class="address">191186, Санкт-Петербург, 
+            ул. Б. Конюшенная, д. 19/8</span>
+           <span class="tel">тел. +7 (812) 275-75-75</span>
+           <a class="write-to-us-btn btn" href="#">напишите нам</a>
        </div>
        
-   </main>
-
-    
+    </section>
         
-            
+   <footer class="footer-main">
+      <div class="container">
+       <div class="social-box">
+           <a href="http://vk.com" class="social vk"></a>
+           <a href="http://facebook.com" class="social fb"></a>
+           <a href="http://instagram.com" class="social ig"></a>
+       </div>
+       
+       <div class="friends-discount">
+           <h2>Давайте дружить, это выгодно!</h2>
+           <p>Скидка 10% для друзей из социальных сетей.</p>
+       </div>
+       
+      </div>
+   </footer>        
                 
                     
                         
@@ -123,21 +184,16 @@
                                 
                                     
         <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-	    <script>
-              $( function() {
-                    $( "#slider-range" ).slider({
-                      range: true,
-                      min: 0,
-                      max: 15000,
-                      values: [ 0, 150000 ],
-                      slide: function( event, ui ) {
-                        $( "#amount" ).val( ui.values[ 0 ]);
-                        $( "#amount1" ).val( ui.values[ 1 ]);
-                      }
-                    });
-                    $( "#amount" ).val(  $( "#slider-range" ).slider( "values", 0 ));
-                    $( "#amount1" ).val(  $( "#slider-range" ).slider( "values", 1 ));
-                  } );
-        </script>                                           
+	    <!--- --------- ----- slider------------------>
+        
+        <script>
+            $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+            });
+        </script>
+            
+        <!--- --------- ----- slider------------------>               
 </body>
 </html>
